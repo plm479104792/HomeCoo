@@ -67,7 +67,9 @@
 		</listener> -->
 	<servlet>
 		<servlet-name>Kaptcha</servlet-name>
-		<servlet-class>com.google.code.kaptcha.servlet.KaptchaServlet</servlet-class>
+		<servlet-class>com.google.code.kaptcha.ser
+		
+		 vlet.KaptchaServlet</servlet-class>
 
 		<init-param>
 			<description> Border around kaptcha. Legal values are yes or no. </description>
