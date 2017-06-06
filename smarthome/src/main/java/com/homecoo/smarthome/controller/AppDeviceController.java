@@ -227,14 +227,8 @@ public class AppDeviceController {
 			Iterator<Device> iterator = deviceList.iterator();
 			while (iterator.hasNext()) {
 				Device device = iterator.next();
-				
-//				String deviceState = deviceStateService.getDeviceState(device.getDeviceNo()).getDeviceStateCmd();
 				DeviceStateRecord record=deviceStateService.getDeviceState(device);
-				
-				
-//				System.out.println(record.getLastUpdateTime()+"==========================================deviceState"+record.toString());
 				DeviceDtoApp deviceDtoApp=DeviceUtil.GetDeviceDtoApp(device, record);
-//				System.out.println("==========================================deviceDtoApp"+deviceDtoApp);
 				deviceDtoAppList.add(deviceDtoApp);
 			}
 			List<UserDeviceSpace> userDeviceSpacesList = userSpaceDeviceService
